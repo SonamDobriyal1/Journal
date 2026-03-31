@@ -1,0 +1,16 @@
+import { siteConfig } from "@/lib/site-config";
+
+export function JournalBanner() {
+  return (
+    <div className="border-b border-[var(--journal-border)] bg-gradient-to-b from-[var(--journal-hero-bg)] to-white">
+      <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8">
+        <h1 className="text-center font-serif text-3xl font-semibold leading-tight tracking-tight text-[var(--journal-heading)] sm:text-4xl">
+          {siteConfig.name}
+        </h1>
+        <p className="mt-3 text-center text-sm text-[var(--journal-muted)]">
+          ISSN {siteConfig.issn} · {siteConfig.tagline}
+        </p>
+      </div>
+    </div>
+  );
+}

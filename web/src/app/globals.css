@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  --journal-heading: #0f172a;
+  --journal-body: #334155;
+  --journal-muted: #64748b;
+  --journal-border: #e2e8f0;
+  --journal-accent: #1e3a5f;
+  --journal-strip: #1e3a5f;
+  --journal-footer-bg: #f8fafc;
+  --journal-canvas: #fafaf9;
+  --journal-hero-bg: #f1f5f9;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-serif: var(--font-serif), ui-serif, Georgia, "Times New Roman", serif;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
