@@ -8,11 +8,13 @@ export function SiteFooter() {
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="font-serif text-sm font-semibold text-[var(--journal-heading)]">
-              {siteConfig.shortName}
+              {siteConfig.name}
             </p>
-            <p className="mt-2 text-xs leading-relaxed text-[var(--journal-muted)]">
-              ISSN {siteConfig.issn}
-            </p>
+            {siteConfig.issn ? (
+              <p className="mt-2 text-xs leading-relaxed text-[var(--journal-muted)]">
+                ISSN {siteConfig.issn}
+              </p>
+            ) : null}
             <p className="mt-1 text-xs text-[var(--journal-muted)]">
               <a className="underline hover:text-[var(--journal-heading)]" href={siteConfig.siteUrl}>
                 {siteConfig.siteUrl.replace(/^https?:\/\//, "")}

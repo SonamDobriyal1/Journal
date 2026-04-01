@@ -117,13 +117,20 @@ export function JournalIssueClient({ slug }: Props) {
         <h2 className="font-serif text-xl font-semibold text-[var(--journal-heading)]">
           Full issue
         </h2>
-        <ul className="mt-4 flex flex-wrap gap-4 text-sm text-[var(--journal-muted)]">
-          <li>
-            <span className="text-zinc-400">Front cover</span>{" "}
-            <span className="text-xs">(upload in Firebase Storage &amp; link from issue doc)</span>
+        <p className="mt-4 text-[15px] leading-relaxed text-[var(--journal-body)]">
+          Each issue may include front and back cover art and, where available, a
+          full-issue PDF for download. Cover images and bundled PDFs are added by the
+          publisher when production is complete; if you do not see links below, they are
+          not yet published for this volume.
+        </p>
+        <ul className="mt-4 flex flex-col gap-2 text-sm text-[var(--journal-muted)]">
+          <li className="flex flex-wrap items-baseline gap-2">
+            <span className="font-medium text-[var(--journal-heading)]">Front cover</span>
+            <span>— Available when linked from the issue record.</span>
           </li>
-          <li>
-            <span className="text-zinc-400">Back cover</span>
+          <li className="flex flex-wrap items-baseline gap-2">
+            <span className="font-medium text-[var(--journal-heading)]">Back cover</span>
+            <span>— Available when linked from the issue record.</span>
           </li>
         </ul>
       </section>

@@ -7,6 +7,7 @@ import { fetchAllIssues } from "@/lib/firestore-journal";
 import { demoIssuesList } from "@/lib/demo-data";
 import type { Issue } from "@/types/journal";
 import { formatIssueLabel, formatPublished } from "@/lib/format-dates";
+import { siteConfig } from "@/lib/site-config";
 
 export function JournalArchivesClient() {
   const [issues, setIssues] = useState<Issue[]>([]);
@@ -43,8 +44,11 @@ export function JournalArchivesClient() {
       <h1 className="font-serif text-3xl font-semibold text-[var(--journal-heading)]">
         All Issues
       </h1>
-      <p className="mt-2 text-sm text-[var(--journal-muted)]">
-        Browse published volumes and issues. Click an issue to view articles.
+      <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[var(--journal-body)]">
+        This archive lists every published volume of <strong>{siteConfig.name}</strong>.
+        Select an issue to see the table of contents, author names, page ranges, and PDF
+        links when available. The issue marked <em>Current</em> is the most recently
+        released compilation.
       </p>
       {loading ? (
         <ul className="mt-8 space-y-3">

@@ -102,12 +102,12 @@ export function JournalHomeClient() {
           About this journal
         </h2>
         <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-[var(--journal-body)]">
-          <strong>{siteConfig.shortName}</strong> (ISSN {siteConfig.issn}) is an
-          international, peer-reviewed, open-access academic journal dedicated to
-          high-quality research in the social sciences and humanities. The
-          journal uses a double-blind peer-review process and publishes original
-          research, reviews, and scholarly discussions. Interdisciplinary work is
-          welcome.
+          <strong>{siteConfig.name}</strong>
+          {siteConfig.issn ? <> (ISSN {siteConfig.issn})</> : null} is an international,
+          peer-reviewed, open-access academic journal dedicated to bringing diverse
+          research streams into dialogue. The journal uses a double-blind peer-review
+          process and publishes original research, reviews, and scholarly discussions.
+          Interdisciplinary work is welcome.
         </p>
         <ul className="mt-6 grid gap-2 sm:grid-cols-2">
           {[

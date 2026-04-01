@@ -8,7 +8,9 @@ export function JournalBanner() {
           {siteConfig.name}
         </h1>
         <p className="mt-3 text-center text-sm text-[var(--journal-muted)]">
-          ISSN {siteConfig.issn} · {siteConfig.tagline}
+          {[siteConfig.issn && `ISSN ${siteConfig.issn}`, siteConfig.tagline]
+            .filter(Boolean)
+            .join(" · ")}
         </p>
       </div>
     </div>
