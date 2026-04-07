@@ -61,7 +61,7 @@ export const editorialTeam: EditorialMember[] = [
     headline: "Associate Editor",
     qualification:
       "Economist; listed among global top 2% scientists (Elsevier–Stanford, 2023–2025)",
-    imageSrc: null,
+    imageSrc: "/editorial/vishal-dagar.jpg",
     bioParagraphs: [
       "Dr. Vishal Dagar is an economist and researcher with more than five years of teaching and research experience across academia, policy, and industry. He is listed among the top 2% of scientists globally (Elsevier–Stanford composite score, 2023, 2024, and 2025).",
       "He has published more than 75 SSCI/SCI research papers in more than 25 leading journals and has reviewed more than 1,500 research papers for over 250 verified leading and reputed journals (FT 50; ABDC: A*, A, and B), including the Journal of Business Ethics, Energy Economics, Energy Policy, International Review of Financial Analysis, International Review of Economics & Finance, Review of International Business & Finance, Technological Forecasting & Social Change, Economic Analysis & Policy, Finance Research Letters, Socio-Economic Planning Sciences, European Management Journal, Management Decision, Resources Policy, Structural Change & Economic Dynamics, and others.",
